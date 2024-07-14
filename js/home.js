@@ -11,6 +11,5 @@ if (localStorage.getItem("userName")) {
 
 navLogOutBtn.addEventListener("click", () => {
     localStorage.removeItem("userName")
-    location.assign("../login.html")
 })
 

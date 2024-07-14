@@ -88,12 +88,12 @@ nav .container {
 
 .navbar .btn {
     margin: 5px;
-    color: black;
+    color: black !important;
 }
 
 .btn:not(.activeBtn) {
     background-color: var(--semi-white-color);
-    color: black;
+    color: black !important;
 
 }
 

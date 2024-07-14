@@ -24,7 +24,6 @@ if (localStorage.getItem("users")) {
 console.log(registerBtn);
 registerBtn.addEventListener("click", () => {
     if (validateInputs()) {
-        location.assign("../login.html");
         setUser()
         clearInputs()
     } else {
@@ -52,15 +51,6 @@ passVisible.addEventListener("click", (e) => {
     password.setAttribute("type", "text")
 })
 
-// Nav buttons
-
-navLogInBtn.addEventListener("click", () => {
-    location.assign("../login.html");
-})
-
-navSignUpBtn.addEventListener("click", () => {
-    location.assign("../index.html");
-})
 
 function setUser() {
     let user = {

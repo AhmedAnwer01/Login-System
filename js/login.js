@@ -32,15 +32,7 @@ passVisible.addEventListener("click", (e) => {
     passInvisible.classList.remove("d-none")
     password.setAttribute("type", "text")
 })
-// Nav buttons
 
-navLogInBtn.addEventListener("click", () => {
-    location.assign("../login.html");
-})
-
-navSignUpBtn.addEventListener("click", () => {
-    location.assign("../index.html");
-})
 
 // Login button
 
@@ -49,7 +41,6 @@ logInBtn.addEventListener("click", () => {
     console.log("authentication: ", authenticateUser());
     if (validateInputs() && authenticateUser()) {
         clearInputs()
-        location.assign("../home.html")
     } else {
         modal.classList.add("d-block")
     }
