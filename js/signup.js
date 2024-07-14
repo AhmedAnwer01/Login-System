@@ -24,7 +24,7 @@ if (localStorage.getItem("users")) {
 console.log(registerBtn);
 registerBtn.addEventListener("click", () => {
     if (validateInputs()) {
-        location.href = "../login.html";
+        location.assign("../login.html");
         setUser()
         clearInputs()
     } else {
@@ -55,11 +55,11 @@ passVisible.addEventListener("click", (e) => {
 // Nav buttons
 
 navLogInBtn.addEventListener("click", () => {
-    location.href = "../login.html";
+    location.assign("../login.html");
 })
 
 navSignUpBtn.addEventListener("click", () => {
-    location.href = "../index.html";
+    location.assign("../index.html");
 })
 
 function setUser() {

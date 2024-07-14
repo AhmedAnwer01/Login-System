@@ -35,11 +35,11 @@ passVisible.addEventListener("click", (e) => {
 // Nav buttons
 
 navLogInBtn.addEventListener("click", () => {
-    location.href = "../login.html";
+    location.assign("../login.html");
 })
 
 navSignUpBtn.addEventListener("click", () => {
-    location.href = "../index.html";
+    location.assign("../index.html");
 })
 
 // Login button
@@ -49,7 +49,7 @@ logInBtn.addEventListener("click", () => {
     console.log("authentication: ", authenticateUser());
     if (validateInputs() && authenticateUser()) {
         clearInputs()
-        location.href = "../home.html"
+        location.assign("../home.html")
     } else {
         modal.classList.add("d-block")
     }
