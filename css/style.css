@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* -----------------Default styles------------------ */
+:root {
+    --semi-white-color: #ffffffae;
+    --white-color: #f2f2f2;
+    --semi-transparent: #ffffff32;
+    --light-gray: #ffffff7a;
+}
+
+body {
+    background-image: url("../images/1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.wrapper {
+    background: linear-gradient(#0000002e, #00000080);
+    height: 100%;
+    position: relative;
+
+}
+
+a {
+    color: var(--white-color) !important;
+
+}
+
+::selection {
+    background: var(--semi-transparent);
+}
+
+/* -----------------navbar------------------ */
+
+.navbar {
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "poppins";
+
+}
+
+.navbar-toggler {
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+        box-shadow: transparent;
+    }
+}
+
+nav .container {
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 0 !important;
+    margin: 0 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "poppins";
+
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+    border-bottom: 2px solid var(--white-color);
+
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 35px;
+    font-weight: 500;
+}
+
+.navbar .btn {
+    margin: 5px;
+    color: black;
+}
+
+.btn:not(.activeBtn) {
+    background-color: var(--semi-white-color);
+    color: black;
+
+}
+
+/* -----------------Form------------------ */
+
+form {
+    position: relative;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+}
+
+form input:not(.form-check-input) {
+    background-color: var(--semi-transparent);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px 35px;
+    margin: 10px 0;
+
+}
+
+form i {
+    color: var(--white-color);
+}
+
+form input::placeholder {
+    color: var(--light-gray);
+}
+
+.input {
+    position: relative;
+}
+
+.input input:active {
+    background-color: var(--light-gray);
+}
+
+form .input-icon {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    padding: 0 5px;
+
+    i {
+        width: 100%;
+    }
+}
+
+form .row .input-icon {
+    left: 20px;
+}
+
+form .eye-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.form-check {
+    margin: 10px 20px;
+}
+
+.form-check-input {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-check-label {
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.terms {
+    text-align: end;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#registerBtn,
+#logInBtn {
+    border: none;
+    border-radius: 25px;
+    padding: 8px 35px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--white-color);
+    }
+}
+
+/* -----------------Sign Up------------------ */
+.modal {
+    z-index: 100;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal-title,
+.modal-body {
+    color: #000;
+}
+
+/* -----------------Login------------------ */
+@media (min-width:572px) {
+
+    .log-in {
+        width: 492px;
+
+    }
+}
+
+/* -----------------Home------------------ */
+
+.hello{
+    margin-bottom: 200px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+
+        <!-- External CSS Files -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Main CSS Files-->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                <div class="container d-flex justify-content-between">
+
+                    <a class="navbar-brand" href="#">Logo</a>
+
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- <div class="" id="blur"></div> -->
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">about</a>
+                        </div>
+                        <div class="nav-buttons ms-auto">
+                            <button type="button" class="btn btn-light activeBtn" id="navSignUpBtn">Sign Up</button>
+                            <button type="button" class="btn btn-light" id="navLogInBtn">Log In</button>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <main>
+                <div class="container vh-100 d-flex justify-content-center align-items-center flex-nowrap">
+
+
+
+                    <section class="sign-up position-relative">
+                        <p class="caption text-center">Have an account? <a href="./login.html">Login</a></p>
+
+                        <h2 class="text-center mb-4">Sign Up</h2>
+                        <form action="" class="form-control">
+                            <div class="row">
+                                <div class="col-sm-6 input">
+                                    <input type="text" name="firstName" class="w-100" placeholder="First Name"
+                                        id="firstName">
+                                    <span class="input-icon">
+                                        <i class="bi bi-person"></i>
+                                    </span>
+                                </div>
+                                <div class="col-sm-6 input">
+                                    <input type="text" name="lastName" class="w-100" placeholder="Last Name"
+                                        id="lastName">
+                                    <span class="input-icon">
+                                        <i class="bi bi-person"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input type="email" placeholder="Email" id="email" class="w-100">
+                                <span class="input-icon">
+                                    <i class="bi bi-envelope-at"></i>
+                                </span>
+                            </div>
+                            <div class="input">
+                                <input type="password" placeholder="Password" id="password" class="w-100">
+                                <span class="input-icon">
+                                    <i class="fa-solid fa-lock mt-1"></i>
+                                </span>
+                                <span class="eye-button">
+                                    <i class="bi bi-eye-fill d-none" id="passInvisible"></i>
+                                    <i class="bi bi-eye-slash-fill" id="passVisible"></i>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-outline-light w-100 mt-2"
+                                id="registerBtn">Register</button>
+                            <div class="d-flex justify-content-between">
+                                <span class="form-check d-inline-block">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMeCheck">
+                                    <label class="form-check-label" for="rememberMeCheck">
+                                        remember me
+                                    </label>
+                                </span>
+                                <span class="terms mt-2 me-2"> <a href="#">Terms and Conditions</a></span>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <!-- Modal -->
+            <section>
+                <div class="container">
+
+                    <!-- Modal -->
+                    <div class="modal fade show " id="ValidationModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Invalid Sign Up</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        id="closeModal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-capitalize">make sure to type valid sign up data</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                        id="modalCloseBtn">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Validation Modal -->
+
+
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="./js/signup.js"></script>
+    </body>
+
+</html>
